@@ -1,0 +1,56 @@
+[
+  {
+    "id": "67566B5970337336",
+    "name": "Toyota",
+    "description": "Jeep Grand Cherokee",
+    "numbModel": 1200,
+    "logo": "toyota.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": true
+  },
+  {
+    "id": "4E645267556B5870",
+    "name": "BMW",
+    "description": "Brand description too long...",
+    "numbModel": 800,
+    "logo": "bmw.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": false
+  },
+  {
+    "id": "294A404E63526655",
+    "name": "MAZDA",
+    "description": "Audi Q7",
+    "numbModel": 620,
+    "logo": "mazda.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": true
+  },
+  {
+    "id": "4326462948404D63",
+    "name": "Huyndai",
+    "description": "Brand description too long...",
+    "numbModel": 4260,
+    "logo": "huyndai.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": false
+  },
+  {
+    "id": "3979244226452948",
+    "name": "KIA",
+    "description": "Dodge Charger",
+    "numbModel": 620,
+    "logo": "kia.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": true
+  },
+  {
+    "id": "73357638792F423F",
+    "name": "Nissan",
+    "description": "Brand description too long...",
+    "numbModel": 4260,
+    "logo": "nissan.png",
+    "lastUpdate": "25/12/2022",
+    "isActive": false
+  }
+]
