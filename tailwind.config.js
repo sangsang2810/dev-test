@@ -7,6 +7,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+
+    screens: {
+      'sm': { 'min': '360px', 'max': '640px' },
+      'md': { 'min': '641px', 'max': '2440px' },
+    },
     colors: {
       'blue': '#1fb6ff',
       'pink': '#ff49db',

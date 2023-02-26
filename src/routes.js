@@ -1,5 +1,5 @@
 import CarBrandPage from './pages/CarBrand/car-brand.page';
-import { BrandDetailComponent, BrandListComponent } from './pages/CarBrand/components';
+import { AddBrandComponent, BrandDetailComponent, BrandListComponent } from './pages/CarBrand/components';
 import LandingPage from './pages/LandingPage/landing.page';
 
 const routes = [
@@ -11,6 +11,7 @@ const routes = [
     children: [
       { index: true, element: <BrandListComponent /> },
       { path: ":carBranId", element: <BrandDetailComponent /> },
+      { path: "/car-brand-list/add-car-brand", element: <AddBrandComponent /> },
     ]
   },
   {

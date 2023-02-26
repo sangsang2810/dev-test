@@ -2,7 +2,7 @@ import { Space, Dropdown } from "antd";
 import React, { useState } from "react";
 import Icon, { DownOutlined } from "@ant-design/icons";
 
-function DropdownTag({ isActive }) {
+function DropdownTag({ isActive, showTag }) {
   const [status, setStatus] = useState(isActive);
 
   const dotSvg = () => (
@@ -42,7 +42,7 @@ function DropdownTag({ isActive }) {
           style={{
             color: `${color}`,
           }}
-          className="m-0 font-medium"
+          className="m-0 font-medium text-base"
         >
           {isActive ? "Active" : "Inactive"}
         </p>
@@ -78,9 +78,13 @@ function DropdownTag({ isActive }) {
 
   return (
     <>
-      <Dropdown menu={{ items, onClick }}>
-        <Space>{tag(status, true)}</Space>
-      </Dropdown>
+      {showTag ? (
+        tag(status, false)
+      ) : (
+        <Dropdown menu={{ items, onClick }}>
+          <Space>{tag(status, true)}</Space>
+        </Dropdown>
+      )}
     </>
   );
 }

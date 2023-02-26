@@ -21,7 +21,7 @@ function TopNavComponent() {
   const DownArrowIcon = (props) => <Icon component={downArrSvg} {...props} />;
 
   return (
-    <div className="flex justify-end h-16 w-full items-center space-x-4 pr-4">
+    <div className="ucar-top-nav flex justify-end h-16 w-full items-center space-x-4 pr-4">
       <InfoCircleOutlined style={{ fontSize: "24px", color: "#1E2D3D" }} />
 
       <BellOutlined style={{ fontSize: "24px", color: "#1E2D3D" }} />

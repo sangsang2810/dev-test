@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { CarBrandData } from "../../../utils/data";
 import { SearchOutlined, PlusOutlined } from "@ant-design/icons";
 import TextArea from "antd/es/input/TextArea";
-import { DropdownTag } from "../../../libs";
+import { DropdownTag, PhoneHeader } from "../../../libs";
 import { useNavigate } from "react-router-dom";
 
 function BrandListComponent() {
@@ -151,6 +151,34 @@ function BrandListComponent() {
     },
   ];
 
+  const phoneColumns = [
+    {
+      dataIndex: "logo",
+      key: "logo",
+      width: 100,
+      height: 124,
+      render: (logo) => (
+        <Avatar
+          shape="square"
+          size={64}
+          src={require(`../../../assets/logo/${logo}`)}
+        />
+      ),
+    },
+    {
+      dataIndex: "info",
+      key: "info",
+
+      render: (info) => (
+        <div>
+          <p className="primary-dark-1 font-medium text-xl mb-2">{info.name}</p>
+          <p className="neutral-6 m-0">{info.numbModel} Models</p>
+        </div>
+      ),
+    },
+    Table.SELECTION_COLUMN,
+  ];
+
   const handleOpenDetails = (record) => {
     navigate(`/car-brand-list/${record.key}`);
   };
@@ -162,11 +190,11 @@ function BrandListComponent() {
     if (!value) {
       convertToTableData(cloneDataSource);
     } else {
-      result = cloneDataSource.find((brand) =>
+      result = cloneDataSource.filter((brand) =>
         brand.name.toLowerCase().includes(value.toLowerCase())
       );
 
-      convertToTableData([result]);
+      convertToTableData(result);
     }
   };
 
@@ -179,32 +207,40 @@ function BrandListComponent() {
     );
   };
 
+  const handleOpenAdd = () => {
+    navigate(`/car-brand-list/add-car-brand`);
+  };
+
   return (
-    <div>
-      <div className="h-10 flex font-semibold mb-7 w-full justify-between">
-        <span className="flex">
-          <p className="text-2xl font-semibold primary-dark-1">
+    <div className="ucar-brand-list">
+      <PhoneHeader type={"normal"} className="md:hidden" add={handleOpenAdd} />
+
+      <div className="h-10 flex font-semibold mb-7 w-full justify-between sm:h-full">
+        <span className="flex sm:flex-col sm:w-full sm:p-4">
+          <p className="ucar-brand-list-title text-2xl font-semibold primary-dark-1 sm:mb-4">
             CAR BRAND LIST
           </p>
-          <Select
-            defaultValue="All"
-            className="font-medium"
-            bordered={false}
-            style={{ width: 119, fontWeight: 500 }}
-            options={[
-              { value: "all", label: "All" },
-              { value: "lastUpdated", label: "Last Updated" },
-              { value: "brandName", label: "Brand Name" },
-              {
-                value: "numberOfModels",
-                label: "Number of Models",
-              },
-            ]}
-          />
+          <span className="sm:hidden">
+            <Select
+              defaultValue="All"
+              bordered={false}
+              style={{ width: 119, fontWeight: 500 }}
+              options={[
+                { value: "all", label: "All" },
+                { value: "lastUpdated", label: "Last Updated" },
+                { value: "brandName", label: "Brand Name" },
+                {
+                  value: "numberOfModels",
+                  label: "Number of Models",
+                },
+              ]}
+            />
+          </span>
+
           <Input
-            className="rounded-full w-60 "
+            className="rounded-full w-60 ucar-brand-list-search sm:w-full sm:rounded-md"
             placeholder="Search car brand"
-            prefix={<SearchOutlined className="mr-2 mb-1 text-xl	" />}
+            prefix={<SearchOutlined className="text-xl	" />}
             onPressEnter={(e) => onSearch(e)}
             onChange={(e) => onSearch(e)}
           />
@@ -212,7 +248,7 @@ function BrandListComponent() {
         <Button
           onClick={showModal}
           type="primary"
-          className="justify-center items-center"
+          className="justify-center items-center sm:hidden"
           icon={
             <PlusOutlined size={"40"} style={{ display: " inline-block" }} />
           }
@@ -267,6 +303,7 @@ function BrandListComponent() {
         </Modal>
       </div>
       <Table
+        className="sm:hidden"
         rowSelection={{
           type: "checkbox",
         }}
@@ -275,6 +312,15 @@ function BrandListComponent() {
         pagination={{ position: ["none", "none"] }}
         showHeader={false}
         scroll={{ y: 575 }}
+      />
+
+      <Table
+        className="md:hidden"
+        columns={phoneColumns}
+        dataSource={dataSource}
+        pagination={{ position: ["none", "none"] }}
+        showHeader={false}
+        rowSelection={{}}
       />
     </div>
   );

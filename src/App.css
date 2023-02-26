@@ -127,3 +127,19 @@
 .ant-modal-footer {
   padding-top: 0px;
 }
+
+.aloalo {
+  background: #0f5edd;
+  border-radius: 12000px;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  .ucar-side-nav,
+  .ucar-brand-list-table,
+  .ucar-top-nav {
+    display: none;
+  }
+}

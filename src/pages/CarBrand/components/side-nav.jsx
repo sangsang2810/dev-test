@@ -37,7 +37,7 @@ function SideNavComponent() {
         width: 240,
         background: "#323435",
       }}
-      className="p-4 pt-6 h-full"
+      className="p-4 pt-6 h-full ucar-side-nav"
     >
       <div className="relative h-full">
         <span className="flex  justify-between	 mb-8">
