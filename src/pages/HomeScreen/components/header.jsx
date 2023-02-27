@@ -4,7 +4,7 @@ import { IMAGES_URI_ENUM } from "../../../utils/enums";
 
 function HeaderComponent() {
   return (
-    <nav class="sticky h-16 top-0 bg-blue py-2 px-4 drop-shadow shadow-blue-600">
+    <nav className="sticky h-16 top-0 bg-white py-2 px-4 ">
       <div>
         <div className="flex items-center justify-between">
           <img

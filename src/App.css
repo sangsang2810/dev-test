@@ -158,3 +158,10 @@ p {
   width: 415px;
   height: 361px;
 }
+
+.break_line_2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

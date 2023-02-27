@@ -23,15 +23,15 @@ function AddBrandComponent() {
 
   const customInput = (label, value) => {
     return (
-      <div class="mb-4 relative">
+      <div className="mb-4 relative">
         <input
-          class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
+          className="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
           id="email"
           type="text"
         />
         <label
           for="email"
-          class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-400 text-base mt-2 cursor-text"
+          className="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-400 text-base mt-2 cursor-text"
         >
           {label}
         </label>

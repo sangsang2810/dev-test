@@ -1,0 +1,179 @@
+{
+  "brands": [
+    {
+      "name": "Toyota",
+      "logo": "toyota.png"
+    },
+    {
+      "name": "BMW",
+      "logo": "bmw.png"
+    },
+    {
+      "name": "Mercedes",
+      "logo": "mec.png"
+    },
+    {
+      "name": "Huyndai",
+      "logo": "huyndai.png"
+    },
+    {
+      "name": "Mazda",
+      "logo": "mazda.png"
+    },
+    {
+      "name": "Audi",
+      "logo": "audi.png"
+    },
+    {
+      "name": "Nissan",
+      "logo": "nissan.png"
+    },
+    {
+      "name": "KIA",
+      "logo": "kia.png"
+    },
+    {
+      "name": "Honda",
+      "logo": "honda.png"
+    },
+    {
+      "name": "More",
+      "logo": "more.png"
+    }
+  ],
+  "carType": [
+    {
+      "name": "Coupe",
+      "image": "type1.png"
+    },
+    {
+      "name": "Sedan",
+      "image": "type2.png"
+    },
+    {
+      "name": "SUV",
+      "image": "type3.png"
+    },
+    {
+      "name": "MPV",
+      "image": "type8.png"
+    },
+    {
+      "name": "Hatchback",
+      "image": "type4.png"
+    },
+    {
+      "name": "Sport",
+      "image": "type5.png"
+    },
+    {
+      "name": "Commercial",
+      "image": "type6.png"
+    },
+    {
+      "name": "Classic",
+      "image": "type7.png"
+    }
+  ],
+  "usedCars": [
+    {
+      "name": "Mazda 3 Sedan 1.5 SP (A)",
+      "price": "83,800",
+      "date": "05/10/11",
+      "km": "8,000",
+      "kmDepr": "$7,000",
+      "image": "used1.png"
+    },
+    {
+      "name": "BMW 5 Series Sedan 520i (A)",
+      "price": "96,800",
+      "date": "05/10/11",
+      "km": "8,000",
+      "kmDepr": "$7,000",
+      "image": "used2.png"
+    },
+    {
+      "name": "Honda CR-V 1.5 Turbo 7-Seater (A)",
+      "price": "139,000",
+      "date": "05/10/11",
+      "km": "8,000",
+      "kmDepr": "$7,000",
+      "image": "used3.png"
+    },
+    {
+      "name": "Subaru Forester 2.0 XT (A)",
+      "price": "65,800",
+      "date": "05/10/11",
+      "km": "8,000",
+      "kmDepr": "$7,000",
+      "image": "used4.png"
+    },
+    {
+      "name": "Honda Shuttle 1.5 [2017] (A)",
+      "price": "67,800",
+      "date": "05/10/11",
+      "km": "8,000",
+      "kmDepr": "$7,000",
+      "image": "used5.png"
+    }
+  ],
+  "newCars": [
+    {
+      "name": "Tesla Model Y SUV",
+      "price": "142,271",
+      "image": "new1.png"
+    },
+    {
+      "name": "Lamborghini Huracan",
+      "price": "250,800",
+      "image": "new2.png"
+    },
+    {
+      "name": "Land Rover Range Rover Mild Hybrid",
+      "price": "578,999",
+      "image": "new3.png"
+    },
+    {
+      "name": "BMW 2 Series Coupé",
+      "price": "264,888",
+      "image": "new4.png"
+    },
+    {
+      "name": "Mercedes Benz E-Class E229d...",
+      "price": "250,800",
+      "image": "new5.png"
+    }
+  ],
+  "latestNews": [
+    {
+      "title": "Volkswagen previews all-new electric sedan with plans for a 2023 launch",
+      "image": "1.png",
+      "author": "Lionel Kong",
+      "createdTime": "30m"
+    },
+    {
+      "title": "Hyundai announces Ioniq 6 'streamliner' sedan to rival Model 3",
+      "image": "2.png",
+      "author": "Derryn Wong",
+      "createdTime": "30m"
+    },
+    {
+      "title": "Top 5 Cheapest Cars In Singapore Under $10,000",
+      "image": "3.png",
+      "author": "UCARS Team",
+      "createdTime": "30m"
+    },
+    {
+      "title": "We Rate The Best Car Cameras For Drivers",
+      "image": "4.png",
+      "author": "UCARS Team",
+      "createdTime": "30m"
+    },
+    {
+      "title": "Singapore Budget 2021: What Do Drivers Need to Know",
+      "image": "5.png",
+      "author": "UCARS Team",
+      "createdTime": "30m"
+    }
+  ]
+}

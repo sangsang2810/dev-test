@@ -1,21 +1,30 @@
 import React from "react";
+import { HomeScreenData } from "../../utils/data";
 import {
   BannerComponent,
+  CarTypeComponent,
   FooterComponent,
   HeaderComponent,
+  LatestNewsComponent,
+  NewCarComponent,
   PopularBrandComponent,
+  UsedCarComponent,
 } from "./components";
 
 function HomeScreenPage() {
+  const { brands, carType, usedCars, newCars, latestNews } = HomeScreenData;
   return (
     <div>
       <div>
         <HeaderComponent />
 
-        <div class="h-screen">
+        <div className="px-4 space-y-4">
           <BannerComponent />
-          <h1 class="text-4xl text-center ">Content</h1>
-          <PopularBrandComponent />
+          <PopularBrandComponent brands={brands} />
+          <CarTypeComponent carType={carType} />
+          <UsedCarComponent usedCars={usedCars} />
+          <NewCarComponent newCars={newCars} />
+          <LatestNewsComponent latestNews={latestNews} />
         </div>
 
         <FooterComponent />
